@@ -13,6 +13,7 @@ public class AdminRepo {
  }
 
  public void addUser(String patient){
+//  table name is hospitalpatient
   String sql = "Insert into hospitalPatient (name) values (" + patient + ")";
   jdbcTemplate.execute(sql);
  }
